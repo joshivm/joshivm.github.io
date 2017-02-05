@@ -450,3 +450,14 @@ display:inline-block;
 margin:0px auto;
 display:block;
 }
+.round {
+border-radius: 50%;
+overflow: hidden;
+width: 80px;
+height: 80px;
+}
+.round img {
+display: block;
+min-width: 80%;
+min-height: 80%;
+}
