@@ -423,6 +423,24 @@ th {
   padding: 0;
 }
 
+.myrecentprojects_imgs{
+float:left;
+max-width:400px;
+}
+.myprojects_imgs{
+float:left;
+max-width:100px;
+}
+.myprojects_desc{
+margin-left:20px;
+float:right;
+max-width:700px;
+}
+.myrecentprojects_desc{
+margin-left:20px;
+float:right;
+max-width:600px;
+}
 .myprojects{
-display: inline;
+display:inline-block;
 }
