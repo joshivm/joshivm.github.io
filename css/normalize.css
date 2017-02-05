@@ -442,5 +442,7 @@ float:right;
 max-width:600px;
 }
 .myprojects{
+margin-top:5px;
+margin-bottom:5px;
 display:inline-block;
 }
