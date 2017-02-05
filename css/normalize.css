@@ -446,3 +446,7 @@ margin-top:5px;
 margin-bottom:5px;
 display:inline-block;
 }
+.img_center{
+margin:0px auto;
+display:block;
+}
