@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en-us">
   <head>
@@ -29,9 +28,21 @@
 		</a></strong></span> 
 		<span style="float:right"> | [Sun, Feb 5 2017]</span>
 		</h2>
+		<figure>
 		<img src="../imgs/cnn.jpg" class="img_center" width="400px" height="300px" >
+		<figcaption style="text-align:center">Fig 1: Convolution neural network architecture</figcaption>
+		</figure>
 		<br>
 		<p>Convolution neural networks play very important role in image classification. CNN's learning is independent of location of characteristics in the image i.e. learning in invariant of position of an object in the image.</p>
+		<p>Fig 1 shows convolution layer of convolution neural network. Convolution operation in CNN is different from those literally used in mathematics or engineering. Convolution is correlation in the context of CNN. CNN convolution layer is generally associated with some kernel. For an image of size <i>M*M</i> kernel of size (AKA patch) of size <i>N*N</i> is used and this patch hovers over an entire image until covers all the pixels of an image in turn creating another representation of an image called feature map by matrix dot product with kernel of choice.  Kernel can hover incrementating by 1 or some value <i>l</i>. This value decides amount of down-sampling that is performed on the image. Value of <i>l</i> is called "stride". Stride of higher magnitude means more loss of information in turn causing poor accuracy. Stride of too small magnitude can be computationally expensive making realtime application of the algorithm non-viable. Stride of appropriate size should be chosen and generally for smaller size images it does not make much difference computationally.</p>
+		<p>Pooling is another important concept when it comes to implementation of CNNs. Pooling just takes input from feature map and creates an approximate representation of the feature map by taking max value among the neighbourhood in max-pooling method and by taking average in average-pooling method. Pooling helps in better and computationally economical representation of features. Apart from these two choice of pooling other possible choices are one to one pooling, three to three pooling and in general n to n pooling also helps. It is also advised to try combination of these pooling types over feature map to get final represenatation and such a combinational pooling is called "inception".</p>
+		<p>After sufficient layers of convolution and pooling finally we have neural network classifier that is trained for classification job at hand. Entire network of convolution and neurons hence called convolution neural network is trained to get best classifier for the problem. Convolution neural networks are generally computatinally expensive to be trained so pre-trained models of CNNs are available from the experts in the fields. Such models are imported into the application as is and then retrained on the desired data. This offers an advantage of less computations and better generalization of the model.</p>
+		<h2 class="project-tagline">Further reading and references: </h2>
+		<ul>
+		<li> Talk by <a href="https://www.youtube.com/watch?v=s716QXfApa0">Cassidy Williams</a></li>
+		<li>Tutorial by <a href="http://brohrer.github.io/how_convolutional_neural_networks_work.html">Brandon Rohrer</a></li>
+		<li><a href="https://arxiv.org/pdf/1603.07285v1.pdf">A guide to convolution arithmatic for deep learning</a></li>
+		</ul>
 	</section>
 
       <footer class="site-footer">
